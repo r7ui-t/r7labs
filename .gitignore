@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# ChatGPT Sites local metadata
-.openai/
-/scripts/create-worker.mjs
