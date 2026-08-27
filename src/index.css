@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&family=Noto+Sans+JP:wght@400;500&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0a;
+  --fg: #f3f2ee;
+  --muted: #969691;
+  --muted-2: #666661;
+  --surface: #11110f;
+  --surface-2: #0e0e0d;
+  --line: rgba(243, 242, 238, .11);
+  --line-strong: rgba(243, 242, 238, .2);
+  --grid: rgba(243, 242, 238, .035);
+  --accent: #8ca4ff;
+  --pointer-glow: rgba(103, 128, 255, .1);
+  --preview-shine: rgba(140, 164, 255, .08);
+  --preview-screen: #080808;
+  --mock-bg: #f3f2ee;
+  --mock-fg: #151515;
+  --mock-muted: #92928d;
+  --mock-soft: #deddd7;
+  --mock-line: rgba(21, 21, 21, .13);
+  --shadow: rgba(0, 0, 0, .28);
+  --sans: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --pointer-x: 50vw;
+  --pointer-y: 30vh;
+  --scroll-progress: 0;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #eeede8;
+  --fg: #11110f;
+  --muted: #66665f;
+  --muted-2: #92928b;
+  --surface: #e5e4de;
+  --surface-2: #f4f3ef;
+  --line: rgba(17, 17, 15, .12);
+  --line-strong: rgba(17, 17, 15, .22);
+  --grid: rgba(17, 17, 15, .04);
+  --accent: #4f63cc;
+  --pointer-glow: rgba(79, 99, 204, .09);
+  --preview-shine: rgba(79, 99, 204, .08);
+  --preview-screen: #deddd7;
+  --mock-bg: #11110f;
+  --mock-fg: #f3f2ee;
+  --mock-muted: #85857e;
+  --mock-soft: #2b2b28;
+  --mock-line: rgba(243, 242, 238, .14);
+  --shadow: rgba(31, 30, 26, .12);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a { -webkit-tap-highlight-color: transparent; }
+
+button { font: inherit; cursor: pointer; }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--accent);
+}
