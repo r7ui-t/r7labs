@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "r7labs",
+  "compatibility_date": "2026-08-28",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": false
+  },
+  "routes": [
+    {
+      "pattern": "r7labs.dev",
+      "custom_domain": true
+    }
+  ]
+}
